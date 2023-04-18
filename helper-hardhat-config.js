@@ -14,10 +14,10 @@ const networkConfig = {
 }
 
 const developmentChains = ["hardhat", "localhost"]
-const nftMarketplaceMother = "0xC15527907cdA4B866D501a200D80DbbA28880266"
+const VERIFICATION_BLOCK_CONFIRMATIONS = 6
 
 module.exports = {
     networkConfig,
     developmentChains,
-    nftMarketplaceMother,
+    VERIFICATION_BLOCK_CONFIRMATIONS,
 }
