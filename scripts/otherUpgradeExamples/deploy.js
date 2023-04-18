@@ -3,6 +3,7 @@ const { ethers, upgrades } = require("hardhat")
 async function main() {
     const Box = await ethers.getContractFactory("Box")
     console.log("Deploying Box, ProxyAdmin, and then Proxy...")
+    // We are passing "42" into "store" function from Box contract
     const proxy = await upgrades.deployProxy(Box, [42], { initializer: "store" })
     console.log("Proxy of Box deployed to:", proxy.address)
 }

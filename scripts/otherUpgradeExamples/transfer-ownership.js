@@ -5,6 +5,7 @@ async function main() {
 
     console.log("Transferring ownership of ProxyAdmin...")
     // The owner of the ProxyAdmin can upgrade our contracts
+    // We are setting new admin
     await upgrades.admin.transferProxyAdminOwnership(gnosisSafe)
     console.log("Transferred ownership of ProxyAdmin to:", gnosisSafe)
 }
