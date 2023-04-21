@@ -1,5 +1,6 @@
 require("@nomiclabs/hardhat-waffle")
 require("@nomiclabs/hardhat-etherscan")
+require("@openzeppelin/hardhat-upgrades")
 require("hardhat-deploy")
 require("solidity-coverage")
 require("hardhat-gas-reporter")
